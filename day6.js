@@ -4,9 +4,9 @@ function addEmp(id,name,salary){
     employees.push({id,name,salary});
     console.log("Employee added",employees);
 }
-addEmp(1,"Aswini",20000)
-addEmp(2,"Aravindh",30000)
-addEmp(3,"Rishiga",10000)
+addEmp(1,"Harish",25000)
+addEmp(2,"Karthi",35000)
+addEmp(3,"Dhiljith",45000)
 //add emp 
 function updateEmp(id,newDetail){
     const emp=employees.find(e=>e.id === id)
