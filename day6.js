@@ -17,7 +17,7 @@ function updateEmp(id,newDetail){
         console.lof("Employees not found")
     }
 }
-updateEmp(3,{name:"prithika"});
+updateEmp(3,{name:"Dhilip"});
 //delete emp
 function removeEmp(id){
     const index=employees.findIndex(e=>e.id === id)
