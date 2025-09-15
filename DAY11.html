@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //local stroge stoes data permantely
+        //until cleared by user or code.
+        localStorage.setItem("username","javascropt");
+        localStorage.getItem("username");
+        localStorage.removeItem("username");
+        localStorage.clear()
+        //storing array value in ls:
+        //Local storage only stores strings ,not arrays,
+        //We need to convert arrays into a string (using jsoN.stringify)
+        var arr=["vincent,18,multibillinear"]
+        localStorage.setItem("details",JSON.stringify(arr))
+        let streadarr=JSON.parse(localstorage.getItem("details"))
+        console.log(streadarr);
+        localStorage.clear()
+        //SToring Array of objects in Local storage
+        let subject={
+            "sub1":"Math",
+            "sub2":"science"
+        }
+        localStorage.setItem("subjectname",JSON.stringify(subject));
+        let stredobj=JSON.parse(localStorage.getItem("subjectname"));
+        //session storage
+        //useful for tempory data
+        //(like login session,form progress)
+        sessionStorage.setItem("fruits,apple");
+        sessionStorage.getItem("fruits");
+    </script>
+</body>
+</html>
